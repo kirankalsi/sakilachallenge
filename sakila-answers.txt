@@ -32,7 +32,7 @@ SELECT title, special_features FROM film WHERE special_features LIKE '%Deleted S
 
 
 12.
-
+SELECT last_name, COUNT(*) FROM actor GROUP BY last_name HAVING COUNT(*) > 1;
 
 13.
 SELECT a.first_name, a.last_name, COUNT(fa.actor_id) AS apps FROM actor a 
@@ -45,10 +45,10 @@ LIMIT 1;
 
 
 15.
-
+SELECT AVG(length) FROM film;
 
 16.
-SELECT AVG(length) FROM film;
+
 
 17.
 SELECT title, description FROM film WHERE description LIKE '%robot%';
